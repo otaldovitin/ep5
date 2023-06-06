@@ -1,0 +1,46 @@
+*{
+   margin: 0%;  
+   padding: 0% ;
+}
+/* #cc7a48 #f1ac6d #8c440c #ad6650  */
+body{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr auto auto 1fr;
+    grid-template-rows: 1fr auto auto 1fr;
+    grid-template-areas: 
+    "cab cab cab cab"
+    "sec pri pri pri"
+    "sec pri pri pri"
+    "fot fot fot fot"
+    ;
+}
+
+
+.grid_c{
+    display: grid;
+    grid-area: cab;
+    background-color: #cc7a48;
+}
+
+
+.grid_p{
+    display: grid;
+    grid-area: pri;
+    background-color: #f1ac6d
+}
+
+
+.grid_s{
+    display: grid;
+    grid-area: sec;
+    background-color: #8c440c 
+}
+
+
+.grid_r{
+    display: grid;
+    grid-area: fot;
+    background-color: #ad6650
+
+}
