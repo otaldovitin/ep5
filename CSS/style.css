@@ -1,21 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
 *{
     margin: 0%;  
     padding: 0% ;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
  }
  /* #cc7a48 #f1ac6d #8c440c #ad6650  */
  body{
      /* background-color: black; */
      display: grid;
      grid-template-columns: auto auto auto auto;
-     grid-template-rows: 0.2fr 0.1fr auto auto;
+     grid-template-rows: 0.3fr 0.1fr auto auto;
      grid-template-areas: 
      "cab cab cab cab"
      "sec pri pri pri"
      "sec pri pri pri"
-     "fot fot fot fot"
-     ;
+     "fot fot fot fot";
  }
- 
  
  .grid_c{
      display: flex;
@@ -25,12 +27,26 @@
      height: 100%;
      align-items: center;
      justify-content: center;
-     text-align: center;
-    
-} 
+     text-align: center;    
+}
+
+#logo img{
+    width: 20rem;
+    height: 11rem;
+    position: relative;
+    right: 370px;
+    top: 7px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#logo img:hover{
+    transform: translatey(10px);
+}
 
 #menu li{
     display: inline;
+    position: relative;
     text-align: center;
     font-size: x-large;
     color: black;
@@ -38,16 +54,27 @@
     border: 4px 8px;
     background-color: #b2bec3;
     padding: 4px 12px;
-    margin: 25px;
+    margin: 40px;
+    right: 90px;
 }
- 
- 
+
+.elemento_father{
+    display: flex;
+}
+
+.son1 img{
+    width: 8rem;
+    
+}
+.son2 img{
+    width: 3rem;
+
+}
+
  .grid_p{
-     align-items: ce;
      grid-area: pri;
      background-color: #fff
  }
- 
  
  .grid_s{
      
@@ -55,16 +82,13 @@
      background-color: #8c440c 
  }
  
- 
  .grid_r{
      display: grid;
      grid-area: fot;
      background-color: #ad6650
- 
  }
 
 .title{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;
     font-weight: bold;
     position: relative;
@@ -73,8 +97,7 @@
     margin-top: 50px;
 }
 
-
-.elemento_father{
+.elemento_father2{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -96,14 +119,12 @@
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10 rgba(0,0,0,0.22);
     transition: .3s;
     background-color: #e0e9ee;
-
 }
 
 .son:hover{
     box-shadow: 0 3px 6px rgba(0,0,0,0.16),
     0 3px 6px rgba(0,0,0,0.23);
     transition: translate(0px, -8px);
-
 }
 
 .son img{
@@ -118,7 +139,6 @@
     text-align: center;
     color: #b2bec3;
     padding-top: 0 8px;
-
 }
 
 .son h6{
@@ -126,7 +146,6 @@
     text-align: center;
     color: #222f3e;
     margin: 2%;
-
 }
 
 
@@ -144,7 +163,6 @@
     justify-content: center;
     align-items: center;
     padding-top: 0%;
-
 } 
 
 .son li{
@@ -178,21 +196,243 @@
     cursor: pointer;
     margin-top: 5px;
     border-radius: 20px;
-    
 }
 
 .add_carrinho-1{
     background-color: #cc7a48;
 }
 
-
-
 .add_carrinho-2{
     background-color: #cc7a48;
 }
 
-
-
 .add_carrinho-3{
     background-color: #cc7a48;
+}
+
+/* FORMULÁRIO DO CADASTRO */
+
+#body2{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 0.5fr 3fr auto auto;
+    grid-template-areas: 
+    "cabe cabe cabe cabe"
+    "prin prin prin prin" 
+    "prin prin prin prin"
+    "fot fot fot fot";
+}
+
+.grid_c2{
+    grid-area: cabe;
+    display: flex;
+    background-color: #cc7a48;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#logo2 img{
+    width: 15rem;
+    height: 10rem;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+#logo2 img:hover{
+    transform: translatey(10px);
+}
+
+.grid_p2{
+    grid-area: prin;
+    width: 100%;
+    height: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.elemento_father3{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.212);
+}
+
+.form-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background-color:#cc7a41 ;
+    padding: 1rem;
+}
+
+.form-img img{
+   width: 31rem; 
+}
+
+.form{
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color:#8c440c;
+   padding: 3rem;
+
+}
+
+.form_c{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-button{
+    display: flex;
+    align-items: center;
+}
+
+.login-button button{
+    border: none;
+    background-color: #b2bec3;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover{
+    background-color: #b2bec5 ;
+}
+
+.login-button button a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.form_c h1::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #b2bec3;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input_mother{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input_son{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.1rem;
+}
+
+.input_son input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input_son input:hover {
+    background-color: #b2bec3;
+}
+
+.input_son input:focus-visible{
+    outline: 1px solid #8c440c;
+}
+
+.input_son label,
+.genero_title h6{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000c0;    
+}
+
+.input_son input::placeholder{
+   color: #000000c0; 
+}
+
+.forma-grupo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+}
+
+.forma-input{
+    display: flex;
+    align-items: center;
+}
+
+.forma-input input{
+    margin-right: 0.35rem;
+}
+
+.forma-input label{
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.cadastrar-button button{
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #b2bec3;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cadastrar-button button:hover{
+    background-color: #b2bec5;
+}
+
+.cadastrar-button button a{
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #000000c0;
+}
+
+/* PAG PRODUTO */
+
+#body3{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 0.5fr 3fr auto auto;
+    grid-template-areas: 
+    "cabec cabec cabec cabec"
+    "secun princ princ princ" 
+    "secun princ princ princ"
+    "foot foot foot foot";
+}
+
+
+.grid_c3{
+    grid-area: cabec;
+}
+
+.grid_p3{
+    grid-area: princ;
+}
+
+.grid_s3{
+    grid-area: secun;
+}
+
+.grid_f3{
+    grid-area: foot;
 }
