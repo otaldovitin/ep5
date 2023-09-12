@@ -1100,14 +1100,49 @@ aside button:hover {
 
 @media screen and (max-width: 1330px) {}
 
-@media screen and (max-width: 1064px) {
-    #logo {
-        width: 2rem;
+@media screen and (max-width: 1064px){
+     body{
+        grid-template-areas: 
+        "cab cab cab cab"
+        "pri pri pri cab "
+        "pri pri pri cab"
+        "fot fot fot fot";
+    }
+    .grid_c{
+        height: 40%;
+        
+    }
+    #logo img{
+        position: relative;
+        left: 2rem;
+    }
+    #menu{
+        display: none;
+    }
+    .grid_p{
+        justify-content: center;
+        position: relative;
+        bottom: 20rem;
+    }
+    .elemento_father{
+        display: none;
+        
+    }
+   
+    .elemento_father2{
+        display: flex;
+        flex-direction: column;
+    }   
+    .son{
+        width: 60%;
+        height: 20%;
     }
 
 
 
+
 }
+
 
 /* RESPONSIVIDADE DA PG DO CADASTRO */
 
